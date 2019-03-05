@@ -21,7 +21,7 @@ public class Numbers {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		
+
 		int [] num = new int[10];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();

@@ -1,23 +1,23 @@
 package design;
 
 public enum Months {
-    January, February, March, April, May, June, July, August, September, October, November, December
+       January, February, March, April, May, June, July, August, September, October, November, December
 }
 
 
+public class CMonth {
 
-public class Emmonth {
+    Months Months; //this come from enum Months
 
-     Months Months; //this come from enum Months
-
-    public Emmonth() {}
-
-    public Emmonth(Emmonth emmonth) {
-        this.Months = Months; //this come from enum year
+    public CMonth() {
     }
 
-    public void whichMonth(Months months) {
-        switch(Months) { //this come from enum year
+    public CMonth(CMonth CMonth) {
+        this.Months = Months; //this come from enum Months
+    }
+
+    public void whichMonth(Months Months) {
+        switch (Months) { //this come from enum Months
             case January:
                 System.out.println("this is January month");
                 break;
@@ -57,15 +57,17 @@ public class Emmonth {
 
             default:
                 break;
+
         }
     }
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Emmonth month = new Emmonth(); //this Month Come From EmMonth Class.
-        month.whichMonth(Months.December);//this year come from enum Months.
+        CMonth obj = new CMonth(); //this Month Come From Month Class.
+
+        obj.whichMonth(design.Months.August);//this Months come from enum Months.
 
     }
+}
 
-}
-}
+
